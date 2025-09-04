@@ -2,12 +2,10 @@ import About from "@/compontes/About";
 import Experience from "@/compontes/Experience";
 import Hero from "@/compontes/Hero";
 import Projects from "@/compontes/Projects";
-import CursorStars from "@/components/CursorStars";
 
 export default function Home() {
   return (
     <div className="relative bg-black">
-      <CursorStars />
       <Hero />
 
       {/* Advanced transition with cybersecurity elements */}
