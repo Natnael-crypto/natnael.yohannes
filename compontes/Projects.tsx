@@ -50,7 +50,7 @@ const Projects = () => {
       title: "Polls Nation",
       description:
         "Interactive polling platform with real-time voting capabilities and comprehensive analytics.",
-      tech: ["Nextjs", "Go", "PostgresQL", "Aws"],
+      tech: ["Nextjs", "Go", "PostgresQL", "AWS"],
       category: "Full Stack Development",
       demo: "https://www.pollsnation.com/",
       github: "#",
