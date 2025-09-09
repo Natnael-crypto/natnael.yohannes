@@ -1,196 +1,321 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {
-  Shield,
-  Code,
-  Database,
-  Cloud,
-  Terminal,
-  Bug,
-  Lock,
-  Zap,
-} from "lucide-react";
+import { MapPin, Calendar, Award, Users } from "lucide-react";
 
-export default function About() {
-  const skillCategories = [
-    {
-      title: "DevSecOps",
-      icon: <Shield className="w-6 h-6" />,
-      skills: [
-        "Secure Coding",
-        "Threat Modeling",
-        "Docker",
-        "CI/CD Security",
-        "AWS",
-      ],
-      color: "bg-white text-black",
-    },
-    {
-      title: "Programming",
-      icon: <Code className="w-6 h-6" />,
-      skills: [
-        "Go",
-        "Python",
-        "Node.js",
-        ".NET",
-        "JavaScript",
-        "TypeScript",
-        "Flutter",
-        "React Native",
-        "Bash",
-        "PowerShell",
-      ],
-      color: "bg-gray-300 text-black",
-    },
-    {
-      title: "Penetration Testing",
-      icon: <Terminal className="w-6 h-6" />,
-      skills: [
-        "Web & API Security",
-        "Network Security",
-        "Vulnerability Assessment",
-        "Ethical Hacking",
-      ],
-      color: "bg-gray-500 text-white",
-    },
-    {
-      title: "Database",
-      icon: <Database className="w-6 h-6" />,
-      skills: ["MySQL", "PostgreSQL", "Database Security"],
-      color: "bg-gray-700 text-white",
-    },
-  ];
-
-  const certifications = [
-    { name: "Certified Cybersecurity", org: "ISC2", year: "2025" },
-    { name: "Red Hat System Administration I", org: "Red Hat", year: "2024" },
-    {
-      name: "CCSK v4.1 Foundation Training",
-      org: "Cloud Security Alliance",
-      year: "2024",
-    },
-    { name: "API Penetration Testing", org: "API University", year: "2025" },
-    {
-      name: "Penetration Testing and Ethical Hacking",
-      org: "Cybrary",
-      year: "2024",
-    },
-    {
-      name: "Security Operations Center in Practice",
-      org: "IBM",
-      year: "2025",
-    },
-  ];
-
+const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-900 relative overflow-hidden">
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 via-transparent to-gray-900/50"></div>
-
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+    <section id="about" className="py-20 relative">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-cyber bg-clip-text text-transparent">
             About Me
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            A dedicated full-stack developer and cybersecurity professional with
-            expertise in building secure applications, conducting penetration
-            testing, and implementing robust security measures across the
-            software development lifecycle. Skilled at delivering scalable,
-            production-ready solutions while ensuring security best practices
-            are integrated from design to deployment.
-          </p>
+          <div className="w-24 h-1 bg-gradient-cyber mx-auto rounded-full"></div>
         </div>
 
-        {/* Skills Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
-            <Zap className="text-gray-400" />
-            Technical Expertise
-          </h3>
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="space-y-6 md:sticky md:top-24 self-start">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold text-cyber-green">
+                Security-First Developer
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                A dedicated full-stack developer and cybersecurity professional
+                with expertise in building secure applications, conducting
+                penetration testing, and implementing robust security measures
+                across the software development lifecycle.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Skilled at delivering scalable, production-ready solutions while
+                ensuring security best practices are integrated from design to
+                deployment. Passionate about bridging the gap between
+                development and security.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {skillCategories.map((category, index) => (
-              <Card
-                key={category.title}
-                className="bg-black/50 border-gray-600 backdrop-blur-sm hover:bg-black/70 transition-all duration-300 transform hover:scale-105 animate-fade-in-up"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <CardHeader className="pb-3">
-                  <CardTitle className="flex items-center gap-3 text-white">
-                    <div className={`p-2 rounded-lg ${category.color}`}>
-                      {category.icon}
-                    </div>
-                    {category.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill) => (
-                      <Badge
-                        key={skill}
-                        variant="secondary"
-                        className="bg-gray-800 text-gray-300 hover:bg-gray-700 transition-colors text-xs"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Education */}
-        <div className="mb-16 animate-fade-in-up">
-          <h3 className="text-2xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
-            <Lock className="text-gray-400" />
-            Education
-          </h3>
-
-          <Card className="bg-black/50 border-gray-600 backdrop-blur-sm max-w-2xl mx-auto hover:bg-black/70 transition-all duration-300">
-            <CardContent className="p-6">
-              <div className="text-center">
-                <h4 className="text-xl font-semibold text-white mb-2">
-                  Bachelor of Science in Software Engineering and Computing
-                  Technology
-                </h4>
-                <p className="text-gray-300 font-medium mb-2">
-                  Cybersecurity Stream
-                </p>
-                <p className="text-gray-400">Addis Ababa University</p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex items-center space-x-3">
+                <MapPin className="w-5 h-5 text-cyber-blue" />
+                <span className="text-sm">Addis Ababa, Ethiopia</span>
               </div>
-            </CardContent>
-          </Card>
-        </div>
+              <div className="flex items-center space-x-3">
+                <Calendar className="w-5 h-5 text-cyber-green" />
+                <span className="text-sm">3+ Years Experience</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Award className="w-5 h-5 text-accent" />
+                <span className="text-sm">Certified Professional</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Users className="w-5 h-5 text-primary" />
+                <span className="text-sm">Team Collaborator</span>
+              </div>
+            </div>
 
-        {/* Certifications */}
-        <div className="animate-fade-in-up">
-          <h3 className="text-2xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
-            <Shield className="text-white" />
-            Certifications
-          </h3>
+            <div className="space-y-3">
+              <h4 className="text-lg font-semibold">Core Values</h4>
+              <div className="flex flex-wrap gap-2">
+                <Badge
+                  variant="secondary"
+                  className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                >
+                  Security First
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
+                >
+                  Clean Code
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className="bg-accent/20 text-accent border-accent/30"
+                >
+                  Continuous Learning
+                </Badge>
+                <Badge
+                  variant="secondary"
+                  className="bg-primary/20 text-primary border-primary/30"
+                >
+                  Team Work
+                </Badge>
+              </div>
+            </div>
+          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {certifications.map((cert, index) => (
-              <Card
-                key={cert.name}
-                className="bg-black/50 border-gray-600 backdrop-blur-sm hover:bg-black/70 transition-all duration-300 transform hover:scale-105 animate-fade-in-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <CardContent className="p-4">
-                  <h4 className="font-semibold text-white mb-1 text-sm">
-                    {cert.name}
-                  </h4>
-                  <p className="text-gray-300 text-sm mb-1">{cert.org}</p>
-                  <p className="text-gray-400 text-xs">{cert.year}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="space-y-6">
+            <Card className="bg-card/50 border-cyber-green/20 hover:border-cyber-green/40 transition-colors">
+              <CardContent className="p-6">
+                <h4 className="text-lg font-semibold mb-3 text-cyber-green">
+                  Development Focus
+                </h4>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• Secure web application development</li>
+                  <li>• API security implementation</li>
+                  <li>• DevSecOps pipeline integration</li>
+                  <li>• Code security review and auditing</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 border-cyber-blue/20 hover:border-cyber-blue/40 transition-colors">
+              <CardContent className="p-6">
+                <h4 className="text-lg font-semibold mb-3 text-cyber-blue">
+                  Security Expertise
+                </h4>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• Penetration testing and vulnerability assessment</li>
+                  <li>• Web and network security analysis</li>
+                  <li>• Threat modeling and risk assessment</li>
+                  <li>• Security incident response</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 border-accent/20 hover:border-accent/40 transition-colors">
+              <CardContent className="p-6">
+                <h4 className="text-lg font-semibold mb-3 text-accent">
+                  Collaboration
+                </h4>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• Cross-functional team leadership</li>
+                  <li>• Security awareness training</li>
+                  <li>• Technical documentation</li>
+                  <li>• Mentor junior developers</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Added: Technical Expertise */}
+            <Card
+              className="bg-card/50 border-cyber-blue/20 hover:border-cyber-blue/40 transition-colors"
+              id="skills"
+            >
+              <CardContent className="p-6 space-y-6">
+                <h4 className="text-lg font-semibold text-cyber-blue">
+                  Technical Expertise
+                </h4>
+
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-medium mb-2">DevSecOps</h5>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        Secure Coding
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        Threat Modeling
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        Docker
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        CI/CD Security
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        AWS
+                      </Badge>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h5 className="font-medium mb-2">Programming</h5>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        Go
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        Python
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        Node.js
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        .NET
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        JavaScript
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        TypeScript
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        Flutter
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        React Native
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        Bash
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        PowerShell
+                      </Badge>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h5 className="font-medium mb-2">Penetration Testing</h5>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge
+                        variant="secondary"
+                        className="bg-accent/20 text-accent border-accent/30"
+                      >
+                        Web & API Security
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-accent/20 text-accent border-accent/30"
+                      >
+                        Network Security
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-accent/20 text-accent border-accent/30"
+                      >
+                        Vulnerability Assessment
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-accent/20 text-accent border-accent/30"
+                      >
+                        Ethical Hacking
+                      </Badge>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h5 className="font-medium mb-2">Database</h5>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
+                      >
+                        MySQL
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
+                      >
+                        PostgreSQL
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
+                      >
+                        Database Security
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Added: Education */}
+            <Card className="bg-card/50 border-primary/20 hover:border-primary/40 transition-colors">
+              <CardContent className="p-6">
+                <h4 className="text-lg font-semibold mb-3 text-primary">
+                  Education
+                </h4>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>
+                    • Bachelor of Science in Software Engineering and Computing
+                    Technology Cybersecurity Stream
+                  </li>
+                  <li>• Addis Ababa University</li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default About;

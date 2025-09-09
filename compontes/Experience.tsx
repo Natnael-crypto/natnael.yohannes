@@ -30,7 +30,7 @@ export default function Experience() {
         "Automated Testing",
       ],
       icon: <Code className="w-5 h-5" />,
-      color: "bg-white text-black",
+      color: "bg-gray-800 text-white",
     },
     {
       title: "Security Engineer Intern",
@@ -50,7 +50,7 @@ export default function Experience() {
         "Vulnerability Assessment",
       ],
       icon: <Shield className="w-5 h-5" />,
-      color: "bg-gray-400 text-black",
+      color: "bg-gray-800 text-white",
     },
   ];
 
@@ -87,7 +87,7 @@ export default function Experience() {
 
                 {/* Content */}
                 <div className="ml-20">
-                  <Card className="bg-gray-900/70 border-gray-600 backdrop-blur-sm hover:bg-gray-900/90 transition-all duration-500 transform hover:scale-[1.02]">
+                  <Card className="bg-card/50 border-cyber-green/20 hover:border-cyber-green/40 transition-colors">
                     <CardHeader>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                         <div className="flex items-start gap-4">
