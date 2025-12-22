@@ -17,6 +17,25 @@ const Projects = () => {
       image: "1.png",
     },
     {
+      title: "QuillScans",
+      description:
+        "A production-ready document intelligence SaaS that allows businesses to upload invoices, receipts, POS records, and bank documents, automatically extract structured accounting data using AI, and export clean reports to Excel or integrate with accounting platforms. Built with a scalable event-driven architecture, background processing, and secure multi-tenant data isolation.",
+      tech: [
+        "Next.js",
+        "Supabase",
+        "Python",
+        "Kafka",
+        "Google OAuth",
+        "Hugging Face",
+        "PostgreSQL"
+      ],
+      category: "SaaS • Document AI • Accounting Automation",
+      demo: "https://quillscans.vercel.app/",
+      github: "#",
+      image: "6.png",
+    }
+    ,
+    {
       title: "Roofle Offers",
       description:
         "Commercial roofing platform with advanced offer management and client interaction features.",

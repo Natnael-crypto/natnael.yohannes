@@ -79,7 +79,7 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Portfolio
+                  View Resume
                 </a>
               </Button>
             </div>
