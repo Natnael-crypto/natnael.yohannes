@@ -19,7 +19,7 @@ const Projects = () => {
     {
       title: "QuillScans",
       description:
-        "A production-ready document intelligence SaaS that allows businesses to upload invoices, receipts, POS records, and bank documents, automatically extract structured accounting data using AI, and export clean reports to Excel or integrate with accounting platforms. Built with a scalable event-driven architecture, background processing, and secure multi-tenant data isolation.",
+        "A scalable, event-driven document AI platform for extracting structured accounting data from financial documents.",
       tech: [
         "Next.js",
         "Supabase",

@@ -112,9 +112,9 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 border-accent/20 hover:border-accent/40 transition-colors">
+            <Card className="bg-card/50 border-cyber-blue/20 hover:border-cyber-blue/40 transition-colors">
               <CardContent className="p-6">
-                <h4 className="text-lg font-semibold mb-3 text-accent">
+                <h4 className="text-lg font-semibold mb-3 text-cyber-blue">
                   Collaboration
                 </h4>
                 <ul className="space-y-2 text-muted-foreground">
@@ -236,6 +236,12 @@ const About = () => {
                       >
                         PowerShell
                       </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-primary/20 text-primary border-primary/30"
+                      >
+                        n8n
+                      </Badge>
                     </div>
                   </div>
 
@@ -244,25 +250,25 @@ const About = () => {
                     <div className="flex flex-wrap gap-2">
                       <Badge
                         variant="secondary"
-                        className="bg-accent/20 text-accent border-accent/30"
+                        className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
                       >
                         Web & API Security
                       </Badge>
                       <Badge
                         variant="secondary"
-                        className="bg-accent/20 text-accent border-accent/30"
+                        className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
                       >
                         Network Security
                       </Badge>
                       <Badge
                         variant="secondary"
-                        className="bg-accent/20 text-accent border-accent/30"
+                        className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
                       >
                         Vulnerability Assessment
                       </Badge>
                       <Badge
                         variant="secondary"
-                        className="bg-accent/20 text-accent border-accent/30"
+                        className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
                       >
                         Ethical Hacking
                       </Badge>
@@ -283,6 +289,12 @@ const About = () => {
                         className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
                       >
                         PostgreSQL
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
+                      >
+                        Supabase
                       </Badge>
                       <Badge
                         variant="secondary"
