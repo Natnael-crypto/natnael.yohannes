@@ -69,7 +69,7 @@ const About = () => {
                 </Badge>
                 <Badge
                   variant="secondary"
-                  className="bg-accent/20 text-accent border-accent/30"
+                  className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
                 >
                   Continuous Learning
                 </Badge>

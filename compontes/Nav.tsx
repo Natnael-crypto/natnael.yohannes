@@ -26,20 +26,19 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-card/95 backdrop-blur-md border-b border-border/50 shadow-deep"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="relative">
+            {/* <div className="relative">
               <Shield className="w-8 h-8 text-cyber-green" />
               <Terminal className="w-4 h-4 text-cyber-blue absolute -bottom-1 -right-1" />
-            </div>
+            </div> */}
             <div className="font-mono">
               <div className="text-lg font-bold">natnael.dev</div>
               <div className="text-xs text-muted-foreground">
