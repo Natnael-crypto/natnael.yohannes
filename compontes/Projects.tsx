@@ -7,6 +7,16 @@ import Image from "next/image";
 const Projects = () => {
   const projects = [
     {
+      title: "V2V",
+      description:
+        "Break language barriers instantly",
+      tech: ["Next.js", "ElevenLabs", "Assemblyai", "NeonDB"],
+      category: "Full Stack Ai Agent Development",
+      demo: "https://v2vai.vercel.app/",
+      github: "#",
+      image: "7.png",
+    },
+    {
       title: "Dynamic Ganache",
       description:
         "A modern web application showcasing dynamic content management and responsive design patterns.",
