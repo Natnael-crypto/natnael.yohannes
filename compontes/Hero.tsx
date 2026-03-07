@@ -42,10 +42,11 @@ const Hero = () => {
               </h1>
 
               <div className="space-y-2 text-xl lg:text-2xl text-muted-foreground mb-6">
+                <p>AI Automation Engineer</p>
                 <p>Full Stack Developer</p>
                 <p>Web & API Security Expert</p>
                 <p>Ethical Hacker & Vulnerability Researcher</p>
-                <p>DevSecOps Practitioner</p>
+                <p>DevSecOps</p>
               </div>
             </div>
 

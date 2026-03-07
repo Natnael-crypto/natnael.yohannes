@@ -14,7 +14,7 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-cyber mx-auto rounded-full"></div>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Ready to secure your next project? Let's discuss how we can work
+            Ready to secure your next project? Let&apos;s discuss how we can work
             together to build secure, scalable solutions.
           </p>
         </div>
@@ -24,12 +24,12 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-cyber-green">
-                Let's Connect
+                Let&apos;s Connect
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Whether you need a security audit, secure application
-                development, or cybersecurity consultation, I'm here to help.
-                Let's discuss your project requirements and how we can enhance
+                development, or cybersecurity consultation, I&apos;m here to help.
+                Let&apos;s discuss your project requirements and how we can enhance
                 your security posture.
               </p>
             </div>

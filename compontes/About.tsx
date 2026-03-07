@@ -236,12 +236,6 @@ const About = () => {
                       >
                         PowerShell
                       </Badge>
-                      <Badge
-                        variant="secondary"
-                        className="bg-primary/20 text-primary border-primary/30"
-                      >
-                        n8n
-                      </Badge>
                     </div>
                   </div>
 
@@ -271,6 +265,36 @@ const About = () => {
                         className="bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30"
                       >
                         Ethical Hacking
+                      </Badge>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h5 className="font-medium mb-2">AI Automation</h5>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        n8n
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        Zapier
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        Make
+                      </Badge>
+                      <Badge
+                        variant="secondary"
+                        className="bg-cyber-green/20 text-cyber-green border-cyber-green/30"
+                      >
+                        LangChain
                       </Badge>
                     </div>
                   </div>

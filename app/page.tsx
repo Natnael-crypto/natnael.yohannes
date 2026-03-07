@@ -2,6 +2,7 @@ import About from "@/compontes/About";
 import Contact from "@/compontes/Contact";
 import Experience from "@/compontes/Experience";
 import Hero from "@/compontes/Hero";
+import ChatWidget from "@/compontes/n8nChat";
 import Navigation from "@/compontes/Nav";
 import Projects from "@/compontes/Projects";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Contact />
+      <ChatWidget />
     </div>
   );
 }
