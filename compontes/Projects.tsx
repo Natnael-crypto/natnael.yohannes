@@ -161,9 +161,6 @@ const Projects = () => {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-center space-x-3">
-                    <div className="text-primary">
-                      <Code className="w-6 h-6" />
-                    </div>
                     <div>
                       <CardTitle className="text-lg mb-2">
                         {project.title}

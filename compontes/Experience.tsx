@@ -29,7 +29,6 @@ export default function Experience() {
         "DevSecOps",
         "Automated Testing",
       ],
-      icon: <Code className="w-5 h-5" />,
       color: "bg-gray-800 text-white",
     },
     {
@@ -49,7 +48,6 @@ export default function Experience() {
         "Threat Detection",
         "Vulnerability Assessment",
       ],
-      icon: <Shield className="w-5 h-5" />,
       color: "bg-gray-800 text-white",
     },
   ];
@@ -91,11 +89,6 @@ export default function Experience() {
                     <CardHeader>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                         <div className="flex items-start gap-4">
-                          <div
-                            className={`p-3 rounded-lg ${exp.color} flex-shrink-0`}
-                          >
-                            {exp.icon}
-                          </div>
                           <div>
                             <CardTitle className="text-xl text-white mb-2">
                               {exp.title}
@@ -120,11 +113,10 @@ export default function Experience() {
                           </div>
                           <Badge
                             variant="outline"
-                            className={`${
-                              exp.type === "Freelance"
+                            className={`${exp.type === "Freelance"
                                 ? "border-white/40 text-white bg-white/10"
                                 : "border-gray-400/40 text-gray-400 bg-gray-400/10"
-                            }`}
+                              }`}
                           >
                             {exp.type}
                           </Badge>
