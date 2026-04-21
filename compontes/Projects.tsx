@@ -7,6 +7,17 @@ import Image from "next/image";
 const Projects = () => {
   const projects = [
     {
+      title: "PharmaCare",
+      description:
+        "Enterprise Resource Planning (ERP) system for pharmacy management",
+      tech: ["Next.js", "Go", "PostgreSQL", "Docker", "Nginx",],
+      category: "ERP",
+      demo: "https://pharmacare-latest.onrender.com/login",
+      github: "#",
+      image: "pharma.png",
+    }
+    ,
+    {
       title: "Nuhas",
       description:
         "Website for beauty shope and salon",
