@@ -7,6 +7,17 @@ import Image from "next/image";
 const Projects = () => {
   const projects = [
     {
+      title: "Nuhas",
+      description:
+        "Website for beauty shope and salon",
+      tech: ["Next.js", "Framer Motion", "Tailwind CSS",],
+      category: "Web Redesign",
+      demo: "https://nuhas.vercel.app/",
+      github: "#",
+      image: "nuhas.png",
+    }
+    ,
+    {
       title: "V2V",
       description:
         "Break language barriers instantly",
